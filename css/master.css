@@ -1,0 +1,180 @@
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif; /*size, lineheight */
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+/* kolory
+ffb3ff - róż */
+/* Global */
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+/* Header */
+header{
+  background:#fff;
+  color:#ffb3ff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#ffb3ff 3px solid;
+}
+
+header a{
+  color:#ffb3ff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#ffb3ff;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#ffe6ff;
+  font-weight:bold;
+}
+
+/*Slider */
+#slider{
+  max-height: 400px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border-bottom: #ffb3ff 3px solid;
+}
+
+#slider  figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 16s slider infinite;
+}
+
+#slider figure img{
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+  border-bottom: 3px solid #ffb3ff;
+}
+
+#boxes .box{
+  float:left;
+  color: #ffb3ff;
+  text-align: center;
+  width:33%;
+
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  color: #000;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#othersidebar{
+  float:right;
+  width:30%;
+  margin-top:30px;
+  padding-top: 40px;
+  margin-bottom: 10px;
+}
+
+/* Main-col */
+article#main-col{
+  color: #000;
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+article#contact{
+  width:65%;
+  float: left;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffb3ff;
+  background-color:#fff;
+  text-align: center;
+}
